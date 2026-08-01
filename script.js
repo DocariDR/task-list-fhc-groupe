@@ -3,6 +3,7 @@ const list = document.getElementById("task-list")
 const listTab = [];
 
 form.addEventListener("submit", fetchValue)
+list.addEventListener("click", deletedItem)
 
 function fetchValue(event) {
     event.preventDefault();
@@ -28,4 +29,13 @@ function validateTask(value) {
     }
     listTab.push(value.toLowerCase())
     return value
+}
+
+// fonction pour supprimer un élément de la liste
+function deletedItem(event) {
+    const linkClicked = event.target.closest(".delete-btn")
+    if(!linkClicked)
+        return;
+    const parentLI = linkClicked.parentElement;
+    parentLI.remove()
 }
