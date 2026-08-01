@@ -12,7 +12,7 @@ function fetchValue(event) {
     const value = validateTask(input.value);
     if (value) {
         listItem.innerHTML = `<div>${value}</div><button type="button" class="delete-btn"><span class="material-symbols-outlined">delete</span></button>`
-        listItem.className = "task-item"
+        listItem.className = "task-item anime-up"
         list.appendChild(listItem)
         input.value = ""
     }
