@@ -55,3 +55,14 @@ main {
 #form .btn:hover {
     background-color: #fefae0aa;
 }
+
+/* ligne de tâche (élément) ajoutée */
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding-bottom: .25rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #fefae0;
+}
