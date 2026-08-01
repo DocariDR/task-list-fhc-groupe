@@ -26,3 +26,17 @@ main {
     padding: 2rem 3rem;
     border-radius: .5rem;
 }
+
+/* Champs du formulaire */
+#form .input-field {
+    padding: .2rem .5rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #540b0e;
+    color: #fefae0;
+    border-bottom: 1px solid #fefae0;
+}
+
+#form .input-field::placeholder {
+    color: #fefae088;
+}
