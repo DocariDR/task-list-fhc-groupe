@@ -66,3 +66,12 @@ main {
     margin-bottom: 2rem;
     border-bottom: 3px solid #fefae0;
 }
+
+/* bouton de suppression d'élément */
+.delete-btn {
+    padding: .25rem;
+    border-radius: 5px;
+    transition: background-color .5s ease;
+    border: none;
+    background-color: transparent;
+}
