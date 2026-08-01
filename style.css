@@ -75,3 +75,18 @@ main {
     border: none;
     background-color: transparent;
 }
+
+.delete-btn:hover {
+    background-color: #fff3;
+    cursor: pointer;
+}
+
+.delete-btn:hover span {
+    color: #f00;
+}
+
+.delete-btn span {
+    color: #fff;
+    vertical-align: middle;
+    transition: color .5s ease;
+}
