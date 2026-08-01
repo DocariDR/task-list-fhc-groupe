@@ -22,6 +22,10 @@ function validateTask(value) {
     if(value === "") {
         alert("Votre champs est vide!")
         return 0
+    } else if(listTab.includes(value.toLowerCase())) {
+        alert("Cette tâche existe déjà !")
+        return 0
     }
+    listTab.push(value.toLowerCase())
     return value
 }
