@@ -71,6 +71,10 @@ main {
     animation: showup 1s ease;
 }
 
+.anime-down {
+    animation: showdown 1s ease;
+}
+
 /* bouton de suppression d'élément */
 .delete-btn {
     padding: .25rem;
@@ -102,5 +106,12 @@ main {
     }
     to {
         transform: translateX(0) scale(1);
+    }
+}
+
+/* animation pour faire disparaitre un élément lors de sa suppression */
+@keyframes showdown {
+    to {
+        transform: translateX(-50px) scale(0);
     }
 }
