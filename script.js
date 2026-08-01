@@ -37,5 +37,6 @@ function deletedItem(event) {
     if(!linkClicked)
         return;
     const parentLI = linkClicked.parentElement;
-    parentLI.remove()
+    parentLI.className = parentLI.className.replace("anime-up", "anime-down")
+    parentLI.addEventListener("animationend", e => parentLI.remove())
 }
