@@ -1,6 +1,6 @@
 const form = document.getElementById("form")
 const list = document.getElementById("task-list")
-const listTab = [];
+let listTab = [];
 
 form.addEventListener("submit", fetchValue)
 list.addEventListener("click", deletedItem)
@@ -45,4 +45,6 @@ function deletedItem(event) {
     parentLI.className = parentLI.className.replace("anime-up", "anime-down")
     // supprimer l'élément de la liste après la fin de l'animation
     parentLI.addEventListener("animationend", e => parentLI.remove())
+    const valueDelete = parentLI.firstChild.textContent
+    listTab = listTab.filter(task => task !== valueDelete.toLowerCase())
 }
