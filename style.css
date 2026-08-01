@@ -67,6 +67,10 @@ main {
     border-bottom: 3px solid #fefae0;
 }
 
+.anime-up {
+    animation: showup 1s ease;
+}
+
 /* bouton de suppression d'élément */
 .delete-btn {
     padding: .25rem;
@@ -89,4 +93,14 @@ main {
     color: #fff;
     vertical-align: middle;
     transition: color .5s ease;
+}
+
+/* animation pour faire apparaitre un élément lors de son ajout */
+@keyframes showup {
+    from {
+        transform: translateX(-50px) scale(0);
+    }
+    to {
+        transform: translateX(0) scale(1);
+    }
 }
