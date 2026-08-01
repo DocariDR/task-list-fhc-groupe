@@ -11,7 +11,7 @@ function fetchValue(event) {
     const listItem = document.createElement("li")
     const value = validateTask(input.value);
     if (value) {
-        listItem.innerHTML = `<div>${value}</div><button type="button" class="delete-btn"><span class="material-symbols-outlined">delete</span></button>`
+        listItem.innerHTML = `<div>${value}</div><button type="button" class="delete-btn" title="Supprimer"><span class="material-symbols-outlined">delete</span></button>`
         listItem.className = "task-item anime-up"
         list.appendChild(listItem)
         input.value = ""
@@ -20,6 +20,7 @@ function fetchValue(event) {
 
 // fonction pour valider la valeur du champs envoyé
 function validateTask(value) {
+    value = value.trim();
     if(value === "") {
         alert("Votre champs est vide!")
         return 0
