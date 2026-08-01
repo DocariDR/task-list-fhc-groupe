@@ -40,3 +40,18 @@ main {
 #form .input-field::placeholder {
     color: #fefae088;
 }
+
+/* le bouton d'envoi du formulaire */
+#form .btn {
+    padding: .25rem .5rem;
+    font-size: 1.3rem;
+    background-color: #fefae0;
+    color: #540b0e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form .btn:hover {
+    background-color: #fefae0aa;
+}
