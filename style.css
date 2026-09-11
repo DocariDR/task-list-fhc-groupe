@@ -87,32 +87,51 @@ main {
     transform: scale(.97);
 }
 
-/* ligne de tâche (élément) ajoutée */
+/* liste de tâches */
+#task-list {
+    display: flex;
+    flex-direction: column;
+}
+
 #task-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-    padding-bottom: .25rem;
-    margin-bottom: 2rem;
-    border-bottom: 3px solid #fefae0;
+    padding: .8rem .2rem;
+    border-bottom: 1px solid #fefae033;
+    transition: background-color .2s ease;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li:hover {
+    background-color: #ffffff0a;
 }
 
 .anime-up {
-    animation: showup 1s ease;
+    animation: showup .4s ease;
 }
 
 .anime-down {
-    animation: showdown 1s ease;
+    animation: showdown .3s ease;
 }
 
 /* bouton de suppression d'élément */
 .delete-btn {
-    padding: .25rem;
-    border-radius: 5px;
-    transition: background-color .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border-radius: 50%;
+    transition: background-color .2s ease;
     border: none;
     background-color: transparent;
+    flex-shrink: 0;
 }
 
 .delete-btn:hover {
@@ -121,13 +140,13 @@ main {
 }
 
 .delete-btn:hover span {
-    color: #f00;
+    color: #ff8a80;
 }
 
 .delete-btn span {
-    color: #fff;
+    color: #fefae0cc;
     vertical-align: middle;
-    transition: color .5s ease;
+    transition: color .2s ease;
 }
 
 /* animation pour faire apparaitre un élément lors de son ajout */
