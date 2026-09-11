@@ -152,16 +152,19 @@ main {
 /* animation pour faire apparaitre un élément lors de son ajout */
 @keyframes showup {
     from {
-        transform: translateX(-50px) scale(0);
+        opacity: 0;
+        transform: translateX(-16px);
     }
     to {
-        transform: translateX(0) scale(1);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
 /* animation pour faire disparaitre un élément lors de sa suppression */
 @keyframes showdown {
     to {
-        transform: translateX(-50px) scale(0);
+        opacity: 0;
+        transform: translateX(-16px);
     }
 }
