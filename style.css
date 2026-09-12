@@ -168,3 +168,9 @@ main {
         transform: translateX(-16px);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .anime-up, .anime-down {
+        animation: none;
+    }
+}
